@@ -1,0 +1,108 @@
+html {
+  font-size: 62.5%;
+  
+  @media (max-width: 1024px) {
+    font-size: 50%; // タブレットサイズ
+  }
+
+  @media (max-width: 767px) {
+    font-size: 40%; // モバイルサイズ
+  }
+
+  // @media (max-width: 520px) {
+  //   font-size: 31.25%; // モバイルサイズ
+  // }
+}
+
+body{
+  font-family: 'Tsukushi B Round Gothic';
+}
+main{
+  overflow: hidden;
+}
+img {
+  width: 100%;
+  height: auto;
+}
+ul {
+  list-style: none ;
+}
+a {
+  transition: all 0.3s ease;
+}
+a:hover{
+  opacity: 0.6;
+}
+
+.container {
+  // width: 100%;
+  margin: 0 auto;
+  max-width: 128rem;
+  box-sizing: content-box;
+  padding: 0 4.5rem;
+}
+
+$main_color: #D9A545;
+
+// 共通部品
+// 共通部品
+
+// ヘッダー
+header{
+  border-bottom: 1px solid #F0F0F0;
+}
+.header{
+  display: flex;
+  width: 78%;
+  margin: 3rem auto 2rem auto;
+  .header_left{
+    width: 30rem;
+    height: 6.5rem;
+  }
+  .header_right{
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    ul{
+      display: flex;
+      font-size: 1.6rem;
+      font-weight: bold;
+      color: #331102;
+      li{
+        margin-left: 3.1rem;
+        a{
+          position: relative;
+          padding-bottom: 0.5rem;
+          &:hover{
+            &::after{
+              transform: scale(1, 1);/*X方向にスケール拡大*/
+            }
+          }
+          &::after{
+            content: '';
+            /*絶対配置で線の位置を決める*/
+            position: absolute;
+            bottom: 0;
+            left: 0%;
+            width: 100%;
+            height: 2px;
+            background: $main_color;
+            /*アニメーションの指定*/
+            transition: all .5s;
+            transform: scale(0, 1);/*X方向0、Y方向1*/
+            transform-origin: left top;/*左上基点*/
+          }
+        }
+      }
+      li:nth-child(1){
+        margin: 0;
+      }
+    }
+  }
+}
+
+.header_right_mobile{
+  display: none;
+  margin-left: auto;
+}
+// ヘッダー

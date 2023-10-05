@@ -1,0 +1,103 @@
+@charset "UTF-8";
+html {
+  font-size: 62.5%;
+}
+@media (max-width: 1024px) {
+  html {
+    font-size: 50%;
+  }
+}
+@media (max-width: 767px) {
+  html {
+    font-size: 40%;
+  }
+}
+
+body {
+  font-family: "Tsukushi B Round Gothic";
+}
+
+main {
+  overflow: hidden;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  transition: all 0.3s ease;
+}
+
+a:hover {
+  opacity: 0.6;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 128rem;
+  box-sizing: content-box;
+  padding: 0 4.5rem;
+}
+
+header {
+  border-bottom: 1px solid #F0F0F0;
+}
+
+.header {
+  display: flex;
+  width: 78%;
+  margin: 3rem auto 2rem auto;
+}
+.header .header_left {
+  width: 30rem;
+  height: 6.5rem;
+}
+.header .header_right {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+}
+.header .header_right ul {
+  display: flex;
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #331102;
+}
+.header .header_right ul li {
+  margin-left: 3.1rem;
+}
+.header .header_right ul li a {
+  position: relative;
+  padding-bottom: 0.5rem;
+}
+.header .header_right ul li a:hover::after {
+  transform: scale(1, 1); /*X方向にスケール拡大*/
+}
+.header .header_right ul li a::after {
+  content: "";
+  /*絶対配置で線の位置を決める*/
+  position: absolute;
+  bottom: 0;
+  left: 0%;
+  width: 100%;
+  height: 2px;
+  background: #D9A545;
+  /*アニメーションの指定*/
+  transition: all 0.5s;
+  transform: scale(0, 1); /*X方向0、Y方向1*/
+  transform-origin: left top; /*左上基点*/
+}
+.header .header_right ul li:nth-child(1) {
+  margin: 0;
+}
+
+.header_right_mobile {
+  display: none;
+  margin-left: auto;
+}/*# sourceMappingURL=index.css.map */
