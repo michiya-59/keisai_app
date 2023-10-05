@@ -97,6 +97,28 @@ header {
   margin: 0;
 }
 
+.main_top .top_message {
+  width: 58%;
+  margin: 3rem auto;
+  font-size: 5.5rem;
+  font-weight: normal;
+  color: #806B62;
+}
+.main_top .top_message h1:nth-child(2) {
+  text-align: right;
+}
+
+.slider {
+  margin: 0 -2rem; /* 一枚一枚の間隔を13pxに設定 */
+}
+.slider img {
+  border-radius: 150px 150px 0px 0px;
+  width: 28rem;
+  height: 26rem; /* 一枚の写真のサイズを240px × 240pxに設定 */
+  margin: 0 2rem; /* 一枚一枚の間隔を13pxに設定 */
+  object-fit: cover;
+}
+
 .header_right_mobile {
   display: none;
   margin-left: auto;
