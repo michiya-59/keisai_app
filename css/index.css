@@ -133,6 +133,40 @@ a:hover {
   color: #656565;
 }
 
+.nav_menu {
+  display: flex;
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #331102;
+}
+.nav_menu li {
+  margin-left: 3.1rem;
+}
+.nav_menu li a {
+  position: relative;
+  padding-bottom: 0.5rem;
+}
+.nav_menu li a:hover::after {
+  transform: scale(1, 1); /*X方向にスケール拡大*/
+}
+.nav_menu li a::after {
+  content: "";
+  /*絶対配置で線の位置を決める*/
+  position: absolute;
+  bottom: 0;
+  left: 0%;
+  width: 100%;
+  height: 2px;
+  background: #D9A545;
+  /*アニメーションの指定*/
+  transition: all 0.5s;
+  transform: scale(0, 1); /*X方向0、Y方向1*/
+  transform-origin: left top; /*左上基点*/
+}
+.nav_menu li:nth-child(1) {
+  margin: 0;
+}
+
 header {
   border-bottom: 1px solid #F0F0F0;
 }
@@ -150,39 +184,6 @@ header {
   margin-left: auto;
   display: flex;
   align-items: center;
-}
-.header .header_right ul {
-  display: flex;
-  font-size: 1.6rem;
-  font-weight: bold;
-  color: #331102;
-}
-.header .header_right ul li {
-  margin-left: 3.1rem;
-}
-.header .header_right ul li a {
-  position: relative;
-  padding-bottom: 0.5rem;
-}
-.header .header_right ul li a:hover::after {
-  transform: scale(1, 1); /*X方向にスケール拡大*/
-}
-.header .header_right ul li a::after {
-  content: "";
-  /*絶対配置で線の位置を決める*/
-  position: absolute;
-  bottom: 0;
-  left: 0%;
-  width: 100%;
-  height: 2px;
-  background: #D9A545;
-  /*アニメーションの指定*/
-  transition: all 0.5s;
-  transform: scale(0, 1); /*X方向0、Y方向1*/
-  transform-origin: left top; /*左上基点*/
-}
-.header .header_right ul li:nth-child(1) {
-  margin: 0;
 }
 
 .header_right_mobile {
@@ -374,4 +375,19 @@ header {
 .notice_list .notice_part:nth-child(1) {
   border-top: 1px solid #909090;
   border-bottom: 1px solid #909090;
+}
+
+.footer {
+  text-align: center;
+  border-top: 1px solid #F0F0F0;
+  margin-top: 20rem;
+  padding-bottom: 1rem;
+}
+.footer .footer_img {
+  width: 20.8%;
+  margin: 2.7rem auto;
+}
+.footer .footer_menu {
+  justify-content: center;
+  margin-bottom: 8rem;
 }/*# sourceMappingURL=index.css.map */
