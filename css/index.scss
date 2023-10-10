@@ -201,10 +201,17 @@ b{
 .margin_bottom10{
   margin-bottom: 1rem;
 }
+.margin_top40{
+  margin-top: 4rem;
+}
 .common_size10{
   font-size: 1rem;
 }
+.common_size13{
+  font-size: 1.3rem;
+}
 .common_size14{
+  color: $black_color;
   font-size: 1.4rem;
 }
 .common_title_h3{
@@ -241,6 +248,14 @@ b{
 }
 .beige{
   color: $beige;
+}
+.notice{
+  color: #806B62;
+  border: 1px solid #806B62;
+}
+.release{
+  color: #1E82DE;
+  border: 1px solid #1E82DE;
 }
 // 共通部品
 
@@ -424,14 +439,6 @@ header{
       text-align: center;
       padding: 4px 0;
     }
-    .notice{
-      color: #806B62;
-      border: 1px solid #806B62;
-    }
-    .release{
-      color: #1E82DE;
-      border: 1px solid #1E82DE;
-    }
     .notice_body{
       color: $black_color;
       font-size: 1.6rem;
@@ -583,3 +590,40 @@ header{
   }
 }
 // 詳細画面
+
+// お知らせ画面
+.notices_nav_list{
+  display: flex;
+  margin-top: 3rem;
+  li{
+    font-size: 1.7rem;
+    text-align: center;
+    padding: 0 2rem 0.5rem 2rem;
+  }
+  .notice_border_bottom{
+    border-bottom: 1px solid #D9A545;
+  }
+}
+.notices_article_part{
+  padding: 2.4rem 1.5rem;
+  border-bottom: 1px solid #F0F0F0;
+  .kind_date{
+    display: flex;
+    margin-bottom: 1rem;
+    .notice_kind{
+      padding: 3px 1.1rem;
+      border-radius: 3px;
+      font-size: 1.3rem;
+      margin-right: 1rem;
+    }
+    .notice_date{
+      line-height: 2.3rem;
+    }
+  }
+  .notices_title{
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin: 1rem 0;
+  }
+}
+// お知らせ画面
