@@ -621,4 +621,67 @@ header {
   font-size: 1.6rem;
   font-weight: bold;
   margin: 1rem 0;
+}
+
+.contact_title {
+  font-size: 2.6rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.contact_part {
+  margin-bottom: 2rem;
+}
+
+.contact_form_title {
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin-bottom: 0.4rem;
+}
+.contact_form_title span {
+  color: #BB915B;
+  font-size: 1.3rem;
+}
+
+input {
+  border: 1px solid #BB915B;
+  padding: 4px;
+  height: 3rem;
+  width: 50%;
+}
+
+textarea {
+  border: 1px solid #BB915B;
+  padding: 4px;
+  width: 100%;
+}
+
+select {
+  border: 1px solid #BB915B;
+  padding: 4px;
+  width: 25%;
+  height: 3rem;
+}
+
+.submit_btn {
+  display: flex;
+  align-items: center;
+  padding: 0.8rem 0;
+  width: 22rem;
+  height: 4rem;
+  background-color: #A7A7A7;
+  border: none;
+  cursor: pointer;
+  font-size: 1.6rem;
+  color: white;
+  justify-content: center;
+  position: relative;
+  margin: 0 auto;
+}
+
+.submit_btn img {
+  width: 1.3rem;
+  height: 1.3rem;
+  position: absolute;
+  right: 1.3rem;
 }/*# sourceMappingURL=index.css.map */
