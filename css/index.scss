@@ -45,6 +45,7 @@ a:hover{
 
 $main_color: #D9A545;
 $black_color: #3C3C3C;
+$beige: #BB915B;
 
 // 共通部品
 .common_title h2{
@@ -210,6 +211,36 @@ b{
   font-size: 2rem;
   font-weight: bold;
   color: #3c3c3c;
+}
+.pagenation{
+  text-align: center;
+  margin-top: 3rem;
+  margin-bottom: 0.5rem;
+  a{
+    padding: 0.2rem 0.4rem;
+    margin-left: 0.5rem;
+    // @include responsive.responsive_media(tab){
+    //   font-size: 2rem;
+    //   padding: 0.8rem 1rem;
+    // }
+  }
+  // @include responsive.responsive_media(sp){
+  //   margin-top: 2rem;
+  //   a{
+  //     font-size: 2.5rem;
+  //   }
+  // }
+}
+.common_box_beige{
+  border: 1px solid $beige;
+  color: $beige;
+}
+.common_btn_beige_background{
+  background: $beige;
+  color: white;
+}
+.beige{
+  color: $beige;
 }
 // 共通部品
 
