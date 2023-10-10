@@ -222,6 +222,30 @@ b {
   color: #3c3c3c;
 }
 
+.pagenation {
+  text-align: center;
+  margin-top: 3rem;
+  margin-bottom: 0.5rem;
+}
+.pagenation a {
+  padding: 0.2rem 0.4rem;
+  margin-left: 0.5rem;
+}
+
+.common_box_beige {
+  border: 1px solid #BB915B;
+  color: #BB915B;
+}
+
+.common_btn_beige_background {
+  background: #BB915B;
+  color: white;
+}
+
+.beige {
+  color: #BB915B;
+}
+
 header {
   border-bottom: 1px solid #F0F0F0;
 }
