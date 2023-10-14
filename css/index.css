@@ -1244,7 +1244,7 @@ select {
     padding: 1rem 0;
   }
   .about_top_visual h2 {
-    font-size: 2.5rem;
+    font-size: 3rem;
     width: 100%;
     left: 0;
     text-align: center;
@@ -1253,11 +1253,11 @@ select {
     text-align: center;
     width: 100%;
     left: 0;
-    font-size: 1.7rem;
+    font-size: 2rem;
     margin-top: 5rem;
   }
   .about_top_visual p {
-    font-size: 1.2rem;
+    font-size: 1.7rem;
     width: 68%;
     text-align: center;
     left: 0;
@@ -1365,7 +1365,7 @@ select {
 }
 @media screen and (max-width: 767px) {
   .site_about_content p {
-    font-size: 1.4rem;
+    font-size: 1.9rem;
     width: 100%;
   }
 }
@@ -1418,7 +1418,7 @@ select {
     margin-top: 5rem;
   }
   .about_info_content h3 {
-    font-size: 2.2rem;
+    font-size: 3rem;
   }
   .about_info_content .about_info_part {
     flex-direction: column-reverse;
@@ -1432,7 +1432,7 @@ select {
     margin-top: 2rem;
   }
   .about_info_content .about_info_part .about_info_part_left p {
-    font-size: 1.4rem;
+    font-size: 1.8rem;
   }
   .about_info_content .about_info_part .about_info_part_right {
     width: 100%;
