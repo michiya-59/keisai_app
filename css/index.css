@@ -731,6 +731,11 @@ header {
   font-size: 1.6rem;
 }
 @media screen and (max-width: 767px) {
+  .area_list a span {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 767px) {
   .area_list {
     margin-bottom: 4rem;
   }
