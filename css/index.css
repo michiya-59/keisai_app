@@ -893,7 +893,8 @@ header {
 }
 @media screen and (max-width: 767px) {
   .detail_main_content p {
-    line-height: 2.5rem;
+    line-height: 3rem;
+    font-size: 2.5rem;
   }
 }
 
