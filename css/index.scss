@@ -844,6 +844,10 @@ header{
       .store_info_img{
         width: 2rem;
         margin-right: 3rem;
+        @include responsive_media(sp){
+          width: 3rem;
+          margin-right: 2rem;
+        }
       }
       .store_info_title{
         font-size: 1.5rem;
