@@ -992,6 +992,9 @@ header{
   font-size: 2.6rem;
   font-weight: bold;
   text-align: center;
+  @include responsive_media(sp){
+    margin-bottom: 2rem;
+  }
 }
 .contact_part{
   margin-bottom: 2rem;
