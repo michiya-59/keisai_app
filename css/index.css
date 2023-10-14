@@ -1108,12 +1108,13 @@ input {
   padding: 4px;
   height: 3rem;
   width: 50%;
+  font-size: 2rem !important;
 }
 @media screen and (max-width: 767px) {
   input {
     width: 100%;
     height: 4rem;
-    font-size: 2rem;
+    font-size: 2rem !important;
   }
 }
 
@@ -1121,7 +1122,12 @@ textarea {
   border: 1px solid #BB915B;
   padding: 4px;
   width: 100%;
-  font-size: 2rem;
+  font-size: 2rem !important;
+}
+@media screen and (max-width: 767px) {
+  textarea {
+    font-size: 2rem !important;
+  }
 }
 
 select {
@@ -1129,6 +1135,7 @@ select {
   padding: 4px;
   width: 25%;
   height: 3rem;
+  font-size: 1.5rem !important;
 }
 @media screen and (max-width: 767px) {
   select {
