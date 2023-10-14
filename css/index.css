@@ -101,11 +101,21 @@ a:hover {
   font-weight: bold;
   margin-top: 0.5rem;
 }
+@media screen and (max-width: 767px) {
+  .common_content .common_content_part p:nth-child(2) {
+    font-size: 2rem;
+  }
+}
 .common_content .common_content_part p:nth-child(3) {
   color: #BBB;
   font-size: 1.4rem;
   text-align: right;
   margin-top: 0.4rem;
+}
+@media screen and (max-width: 767px) {
+  .common_content .common_content_part p:nth-child(3) {
+    font-size: 1.8rem;
+  }
 }
 @media screen and (max-width: 767px) {
   .common_content .common_content_part {
@@ -146,6 +156,11 @@ a:hover {
   padding: 0.3rem 2rem;
   border-radius: 4rem;
 }
+@media screen and (max-width: 767px) {
+  .tag {
+    font-size: 2rem;
+  }
+}
 
 .clock {
   display: flex;
@@ -155,9 +170,19 @@ a:hover {
   width: 1.8rem;
   margin-right: 0.2rem;
 }
+@media screen and (max-width: 767px) {
+  .clock .clock_img {
+    width: 2.8rem;
+  }
+}
 .clock p {
   font-size: 1.38rem;
   color: #656565;
+}
+@media screen and (max-width: 767px) {
+  .clock p {
+    font-size: 2rem;
+  }
 }
 
 .position {
@@ -255,6 +280,11 @@ b {
 .common_size14 {
   color: #3C3C3C;
   font-size: 1.4rem;
+}
+@media screen and (max-width: 767px) {
+  .common_size14 {
+    font-size: 2rem;
+  }
 }
 
 .common_title_h3 {
@@ -569,6 +599,7 @@ header {
 @media screen and (max-width: 767px) {
   .ranking_content_part .ranking_left_img {
     height: auto;
+    width: 28.5%;
   }
 }
 .ranking_content_part .ranking_right_content {
@@ -748,6 +779,7 @@ header {
 @media screen and (max-width: 767px) {
   .notice_list .notice_part .notice_kind_content .notice_kind {
     padding: 2px 0;
+    font-size: 2rem;
   }
 }
 .notice_list .notice_part .notice_body {
@@ -795,6 +827,11 @@ header {
   width: 20.8%;
   margin: 2.7rem auto;
 }
+@media screen and (max-width: 767px) {
+  .footer .footer_img {
+    width: 40%;
+  }
+}
 .footer .footer_menu {
   justify-content: center;
   margin-bottom: 8rem;
@@ -810,7 +847,7 @@ header {
 }
 
 .pankuzu {
-  margin: 1.6rem 0;
+  margin: 2rem 0;
   color: #3C3C3C;
 }
 
@@ -824,7 +861,7 @@ header {
   margin-bottom: 6rem;
 }
 .detail_main_content p {
-  font-size: 1.6rem;
+  font-size: 2rem;
   color: #3c3c3c;
   margin: 1rem 0;
 }
@@ -859,6 +896,7 @@ header {
 @media screen and (max-width: 767px) {
   .store_info .store_info_left .store_info_part .store_info_title {
     width: 20%;
+    font-size: 2rem;
   }
 }
 @media screen and (max-width: 320px) {
@@ -869,6 +907,11 @@ header {
 .store_info .store_info_left .store_info_part .store_info_body {
   width: 60%;
   font-size: 1.4rem;
+}
+@media screen and (max-width: 1024px) {
+  .store_info .store_info_left .store_info_part .store_info_body {
+    font-size: 2rem;
+  }
 }
 .store_info .store_info_left .store_info_body_content .store_info_body {
   width: 100%;
@@ -895,7 +938,7 @@ header {
   margin-right: 1rem;
 }
 .store_info .store_info_left .multiple_lines .store_info_detail_part .sns_link_list .twitter, .store_info .store_info_left .multiple_lines .store_info_detail_part .sns_link_list .instagram, .store_info .store_info_left .multiple_lines .store_info_detail_part .sns_link_list .facebook, .store_info .store_info_left .multiple_lines .store_info_detail_part .sns_link_list .line {
-  width: 3rem;
+  width: 5rem;
   margin-right: 1rem;
 }
 .store_info .store_info_left .multiple_lines .sns_link_info {
@@ -978,6 +1021,7 @@ header {
 .notices_article_part .kind_date {
   display: flex;
   margin-bottom: 1rem;
+  align-items: center;
 }
 .notices_article_part .kind_date .notice_kind {
   padding: 3px 1.1rem;
@@ -988,10 +1032,20 @@ header {
 .notices_article_part .kind_date .notice_date {
   line-height: 2.3rem;
 }
+@media screen and (max-width: 767px) {
+  .notices_article_part .kind_date .notice_date {
+    font-size: 1.8rem;
+  }
+}
 .notices_article_part .notices_title {
   font-size: 1.6rem;
   font-weight: bold;
   margin: 1rem 0;
+}
+@media screen and (max-width: 767px) {
+  .notices_article_part .notices_title {
+    font-size: 2rem;
+  }
 }
 
 .contact_title {
@@ -1013,6 +1067,11 @@ header {
   color: #BB915B;
   font-size: 1.3rem;
 }
+@media screen and (max-width: 767px) {
+  .contact_form_title p {
+    font-size: 2rem;
+  }
+}
 
 input {
   border: 1px solid #BB915B;
@@ -1024,6 +1083,7 @@ input {
   input {
     width: 100%;
     height: 4rem;
+    font-size: 2rem;
   }
 }
 
@@ -1031,6 +1091,7 @@ textarea {
   border: 1px solid #BB915B;
   padding: 4px;
   width: 100%;
+  font-size: 2rem;
 }
 
 select {
@@ -1043,6 +1104,7 @@ select {
   select {
     width: 50%;
     height: 4rem;
+    font-size: 2rem;
   }
 }
 
@@ -1060,6 +1122,13 @@ select {
   justify-content: center;
   position: relative;
   margin: 0 auto;
+}
+@media screen and (max-width: 767px) {
+  .submit_btn {
+    font-size: 2rem;
+    width: 30rem;
+    height: 5rem;
+  }
 }
 
 .submit_btn img {
