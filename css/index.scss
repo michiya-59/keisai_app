@@ -801,10 +801,9 @@ header{
   // @include responsive.responsive_media(tab){
   //   font-size: 1.6rem;
   // }
-  // @include responsive.responsive_media(sp){
-  //   margin-bottom: 3rem;
-  //   font-size: 1.2rem;
-  // }
+  @include responsive_media(sp){
+    font-size: 2rem;
+  }
 }
 .detail_content_sub_bottom{
   display: flex;

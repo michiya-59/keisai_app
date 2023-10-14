@@ -850,6 +850,11 @@ header {
   margin: 2rem 0;
   color: #3C3C3C;
 }
+@media screen and (max-width: 767px) {
+  .pankuzu {
+    font-size: 2rem;
+  }
+}
 
 .detail_content_sub_bottom {
   display: flex;
