@@ -298,9 +298,19 @@ b {
   margin-top: 3rem;
   margin-bottom: 0.5rem;
 }
+@media screen and (max-width: 767px) {
+  .pagenation {
+    margin-bottom: 6rem;
+  }
+}
 .pagenation a {
   padding: 0.2rem 0.4rem;
   margin-left: 0.5rem;
+}
+@media screen and (max-width: 767px) {
+  .pagenation a {
+    padding: 1.2rem;
+  }
 }
 
 .common_box_beige {
@@ -1109,7 +1119,7 @@ select {
   select {
     width: 50%;
     height: 4rem;
-    font-size: 2rem;
+    font-size: 2rem !important;
   }
 }
 

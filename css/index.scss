@@ -280,13 +280,15 @@ b{
   text-align: center;
   margin-top: 3rem;
   margin-bottom: 0.5rem;
+  @include responsive_media(sp){
+    margin-bottom: 6rem;
+  }
   a{
     padding: 0.2rem 0.4rem;
     margin-left: 0.5rem;
-    // @include responsive.responsive_media(tab){
-    //   font-size: 2rem;
-    //   padding: 0.8rem 1rem;
-    // }
+    @include responsive_media(sp){
+      padding: 1.2rem;
+    }
   }
   // @include responsive.responsive_media(sp){
   //   margin-top: 2rem;
@@ -1033,7 +1035,7 @@ select{
   @include responsive_media(sp){
     width: 50%;
     height: 4rem;
-    font-size: 2rem;
+    font-size: 2rem !important;
   }
 }
 .submit_btn {
