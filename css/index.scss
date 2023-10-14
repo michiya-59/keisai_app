@@ -1,7 +1,7 @@
 $breakpoint: (
   sp_320: 'screen and (max-width: 320px)', // 320ピクセル以下のスマートフォン向けのスタイル
   sp_375: 'screen and (max-width: 375px)', // 375ピクセル以下のスマートフォン向けのスタイル
-  sp_390: 'screen and (max-width: 390px)', // 375ピクセル以下のスマートフォン向けのスタイル
+  sp_393: 'screen and (max-width: 393px)', // 375ピクセル以下のスマートフォン向けのスタイル
   sp_430: 'screen and (max-width: 430px)', // 430ピクセル以下のスマートフォン向けのスタイル
   sp: 'screen and (max-width: 767px)', // 767ピクセル以下のスマートフォン向けのスタイル
   tab_768: 'screen and (max-width: 768px)', // 768ピクセル以下のスマートフォン向けのスタイル
@@ -31,7 +31,7 @@ html {
   // }
 }
 body{
-  font-family: 'Tsukushi B Round Gothic';
+  font-family: 'Tsukushi A Round Gothic';
   min-height: 98vh;
   position: relative;
   padding-bottom: 39rem;
@@ -209,6 +209,9 @@ $beige: #BB915B;
         transform-origin: left top;/*左上基点*/
       }
     }
+    @include responsive_media(sp_320){
+      margin-left: 0;
+    }
   }
   li:nth-child(1){
     margin: 0;
@@ -320,7 +323,7 @@ header{
     width: 30rem;
     height: 6.5rem;
     @include responsive_media(sp){
-      width: 50%;
+      width: 28rem;
     }
   }
   .header_right{
@@ -972,6 +975,10 @@ input{
   padding: 4px;
   height: 3rem;
   width: 50%;
+  @include responsive_media(sp){
+    width: 100%;
+    height: 4rem;
+  }
 }
 textarea{
   border: 1px solid #BB915B;
@@ -983,6 +990,10 @@ select{
   padding: 4px;
   width: 25%;
   height: 3rem;
+  @include responsive_media(sp){
+    width: 50%;
+    height: 4rem;
+  }
 }
 .submit_btn {
   display: flex;
@@ -1007,3 +1018,292 @@ select{
   right: 1.3rem;
 }
 // 問い合わせフォーム
+
+// 「日常街のポータル」とは
+.about_top_visual{
+  background-image: url("../img/about_top_visual.png");
+  background-size: cover;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  padding: 10rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &::after{
+    content: "";
+    display: block;
+    width: 100%;
+    position: absolute;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.28);
+    top: 0;
+  }
+  h2{
+    font-size: 4.8rem;
+    font-weight: bold;
+    color: white;
+    z-index: 100;
+    width: 100%;
+    text-align: center;
+    position: inherit;
+    top: 0;
+    left: 0;
+  }
+  h3{
+    font-size: 2.4rem;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    width: 100%;
+    z-index: 100;
+    position: inherit;
+    top: 0;
+    left: 0;
+    margin-top: 10rem;
+    &::before{
+      content: '';
+      display: inline-block;
+      width: 100px;
+      border-top: 1px solid white;
+      margin-right: 2.5rem;
+      vertical-align: middle;
+      @include responsive_media(sp){
+        width: 4.3rem;
+      }
+      @include responsive_media(sp_393){
+        left: 12rem;
+      }
+      @include responsive_media(sp_320){
+        left: 8rem;
+      }
+    }
+    &::after{
+      content: '';
+      display: inline-block;
+      width: 100px;
+      border-top: 1px solid white;
+      margin-left: 2.5rem;
+      vertical-align: middle;
+      @include responsive_media(sp){
+        width: 4.3rem;
+      }
+      @include responsive_media(sp_393){
+        right: 12rem;
+      }
+      @include responsive_media(sp_320){
+        right: 8rem;
+      }
+    }
+  }
+  p{
+    font-size: 2.4rem;
+    color: white;
+    width: 74rem;
+    text-align: center;
+    z-index: 100;
+    margin: 10rem auto 0 auto;
+    position: inherit;
+    top: 0;
+    left: 0;
+  }
+  @include responsive_media(tab){
+    height: 35rem;
+    padding: 1rem 0;
+    h2{
+      font-size: 2.5rem;
+      width: 100%;
+      left: 0;
+      text-align: center;
+    }
+    h3{
+      text-align: center;
+      width: 100%;
+      left: 0;
+      font-size: 1.7rem;
+      margin-top: 5rem;
+    }
+    p{
+      font-size: 1.2rem;
+      width: 68%;
+      text-align: center;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      margin-top: 1rem;
+    }
+    &::after{
+      height: 35rem;
+    }
+  }
+}
+.about_bottom_visual{
+  background-image: url(../img/about_img6.png);
+  background-size: cover;
+  position: relative;
+  background-position: center;
+  width: 100%;
+  height: 70vh;
+  margin-top: 10rem;
+  padding: 5rem 0 ;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &::after{
+    content: "";
+    display: block;
+    width: 100%;
+    position: absolute;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.28);
+    top: 0;
+  }
+  h2{
+    position: inherit;
+    font-size: 4.8rem;
+    font-weight: bold;
+    color: white;
+    z-index: 100;
+    left: 0;
+    top: 0; 
+    text-align: center;
+  }
+  p{
+    font-size: 2.4rem;
+    color: white;
+    width: 74rem;
+    text-align: center;
+    z-index: 100;
+    position: inherit;
+    top: 0;
+    right: 0;
+    margin: 3rem auto 0 auto;
+
+  }
+  @include responsive_media(tab){
+    height: 28rem;
+    margin-top: 0;
+    h2{
+      font-size: 2.5rem;
+      left: 0;
+      width: 100%;
+      margin: 0;
+    }
+    p{
+      font-size: 1.2rem;
+      width: 75%;      
+    }
+    &::after{
+      height: 28rem;
+    }
+  }
+  @include responsive_media(sp_320){
+    padding: 4rem 0 3rem 0;
+  }
+}
+.site_about_content{
+  margin-top: 4rem;
+  .about_title{
+    color: #3C3C3C;
+    font-size: 2.4rem;
+    font-weight: bold;
+    width: fit-content;
+    background: #E4E4E4;
+    margin: 0 auto 3rem auto;
+    padding: 1rem;
+    @include responsive_media(sp){
+      font-size: 1.7rem;
+      margin-bottom: 2rem;
+    }
+  }
+  p{
+    color: #3C3C3C;
+    font-size: 2rem;
+    width: 55rem;
+    margin: 0 auto;
+    text-align: center;
+    @include responsive_media(sp){
+      font-size: 1.4rem;
+      width: 100%;
+    }
+  }
+}
+.about_info_content{
+  margin-top: 9rem;
+  h3{
+    font-size: 3.6rem;
+    font-weight: bold;
+    color: #BB915B;
+    width: fit-content;
+    margin: 0 auto 3.8rem auto;
+  }
+  .about_info_part{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 6rem;
+    align-items: center;
+    .about_info_part_left{
+      text-align: center;
+      width: 45%;
+      margin-right: 5rem;
+      p{
+        color: #3c3c3c;
+        font-size: 2rem;
+        margin-top: 1.5rem;
+        line-height: 2.7rem;
+      }
+    }
+    .about_info_part_right{
+      width: 38%;
+      height: 25rem;
+      img{
+        border-radius: 1.5rem;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+  .revese{
+    flex-direction: row-reverse;
+    .about_info_part_left{
+      margin-right: 0;
+      margin-left: 5rem;
+    }
+  }
+  @include responsive_media(sp){
+    margin-top: 5rem;
+    h3{
+      font-size: 2.2rem;
+    }
+    .about_info_part{
+      flex-direction: column-reverse;
+      .about_info_part_left{
+        width: 100%;
+        margin: 0;
+        b{
+          font-size: 1.9rem;
+          margin-top: 2rem;
+        }
+        p{
+          font-size: 1.4rem;
+        }
+      }
+      .about_info_part_right{
+        width: 100%;
+        margin: 0;
+        b{
+          font-size: 1.9rem;
+          margin-top: 2rem;
+        }
+        p{
+          font-size: 1.4rem;
+        }
+      }
+    }
+  }
+}
+.about_top_visual_container, .about_bottom_visual_container{
+  max-width: 128rem;
+  position: inherit;
+}
+// 「日常街のポータル」とは
