@@ -153,6 +153,9 @@ $beige: #BB915B;
     transform: scale(0, 1);/*X方向0、Y方向1*/
     transform-origin: left top;/*左上基点*/
   }
+  @include responsive_media(sp){
+    font-size: 2.5rem;
+  }
 }
 .tag{
   color: white;
